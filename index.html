@@ -6,7 +6,7 @@
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>T2Vs Meet VLMs: A Scalable Multimodal Dataset for Visual Harmfulness Recognition</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -42,105 +42,71 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
-
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">T2Vs Meet VLMs: A Scalable Multimodal Dataset for Visual Harmfulness Recognition</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://github.com/denny3388">Chen Yeh</a><sup>1*</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              <a href="https://github.com/thisismingggg">You-Ming Chang</a><sup>1*</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              <a href="https://walonchiu.github.io">Wei-Chen Chiu</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://ningyu1991.github.io/">Ning Yu</a><sup>2</sup>
             </span>
           </div>
-
+          <span class="author-block">
+            (<sup>*</sup>Both authors contribute equally)
+          </span>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>National Yang Ming Chiao Tung University,</span>
+            <span class="author-block"><sup>2</sup>Netflix Eyeline Studios</span>
           </div>
+          <span class="author-block">
+            &#127881 Accepted to <b>NeurIPS'24 Datasets and Benchmarks Track</b> &#127881
+          </span>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
+              <!-- NeurIPS PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
+                <!-- <a href="https://arxiv.org/pdf/2011.12948" -->
+                <a class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
               </span>
+              <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://eva-lab.synology.me:8001/sharing/2iar2UrZs"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data (VHD11K)</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2409.19734"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv (w/ Appendix)</span>
                 </a>
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
+                <!-- <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA" -->
+                <a class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
@@ -149,7 +115,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/nctu-eva-lab/VHD11K"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -157,15 +123,6 @@
                   <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
             </div>
 
           </div>
@@ -175,280 +132,193 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+<!-- Brief Intro -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
+    <!-- Overview Image. -->
+    <div class="columns is-centered ">
+      <div class="column is-four-fifths has-text-centered interpolation-panel">
+        <img src="./static/images/overview.png"
+              class="overview-image"
+              alt="Dataset curating process image."/>
+        <p>Overview: dataset curating process. Please note that the white rectangle masks serve as censorship, and are not included as inputs. <i>"A."</i>, <i>"N."</i> and <i>"J."</i> stand for the affirmative debater, the negative debater and the judge respectively.</p>
+      </div>
+    </div>
+    <!--/ Overview Image. -->
+
+    <!-- Overview. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">&#128161 Overview</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            We propose a comprehensive and extensive harmful dataset, <b>isual Harmful Dataset 11K (VHD11K)</b>, consisting of <b>10,000 images</b> and <b>1,000 videos</b>, crawled from the Internet and generated by 4 generative models, across a total of <b>10 harmful categories</b> covering a full spectrum of harmful concepts with non-trival definition. 
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            We also propose a novel annotation framework by formulating the annotation process as a <b>Multi-agent Visual Question Answering (VQA) Task</b>, having 3 different VLMs "<b>debate</b>" about whether the given image/video is harmful, and incorporating the in-context learning strategy in the debating process.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+    <!--/ Overview. -->
 
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
+        <h2 class="title is-3">&#128249 Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <!-- <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
         </div>
       </div>
     </div>
     <!--/ Paper video. -->
+
+    <!-- VHD11K. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">&#128218 VHD11K: Our Proposed Multimodal Dataset for Visual Harmfulness Recognition</h2>
+        <div class="content has-text-justified">
+          <p>
+            The entire dataset is publicly available at <a href="https://eva-lab.synology.me:8001/sharing/2iar2UrZs">here</a>. Under the shared folder, there are: 
+          </p>
+          <pre><code>dataset_10000_1000
+|--croissant-vhd11k.json            # metadata of VHD11K
+|--harmful_image_10000_ann.json     # annotaion file of harmful images of VHD11K 
+                                      (image name, harmful type, arguments, ...)
+|--harmful_images_10000.zip         # 10000 harmful images of VHD11K
+|--harmful_video_1000_ann.json      # annotaion file of harmful videos of VHD11K
+                                      (video name, harmful type, arguments, ...)
+|--harmful_videos_1000.zip          # 1000 harmful videos of VHD11K
+|--ICL_samples.zip                  # in-context learning samples used in annoators
+    |--ICL_images                   # in-context learning images
+    |--ICL_videos_frames            # frames of each in-context learning video</code></pre>
+        </div>
+      </div>
+    </div>
+    <!--/ VHD11K. -->
+
+    <!-- Evaluation. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">&#128202 Evaluation</h2>
+        <div class="columns is-centered">
+          <div class="column is-four has-text-centered">
+            <img src="./static/images/benchmarking.png"
+                     class="interpolation-image"
+                     alt="Pretrained models banchmarking table."/>
+            <p>Harmfulness detection accuracies of <b><u>pretrained</u></b> baseline methods.</p>
+
+            <img src="./static/images/VHD11K_vs_SMID.png"
+                  class="interpolation-image"
+                  alt="VHD11K and SMID comparison table."/>
+            <p>Harmfulness detection accuracies of <b><u>prompt-tuned mothods on VHD11K and SMID</u></b>.</p>
+          </div>
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            Evaluation and experimental results demonstrate that 
+            <ol>
+              <li>
+                the <b>great alignment</b> between the annotation from our novel annotation framework and those from human, ensuring the reliability of VHD11K.
+              </li>
+              <li>
+                our full-spectrum harmful dataset <b>successfully identifies the inability of existing harmful content detection methods</b> to detect extensive harmful contents and improves the performance of existing harmfulness recognition methods.
+              </li>
+              <li>
+                our dataset <b>outperforms the baseline dataset, SMID,</b> as evidenced by the superior improvement in harmfulness recognition methods.
+              </li>
+            </ol>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Evaluation. -->
+
   </div>
 </section>
 
-
 <section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">&#128588 Examples</h2>
+  
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-4">Annotating Process</h2>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            When inputting a visual content, the two debaters (i.e. affirmative and negative debaters) engage in a two-round debate on whether the given content is harmful. The "judge" then makes the final decision based on the arguments of both sides. For detailed role definitions for each of the three agents, please refer to the appendix of the paper.
           </p>
-        </div>
+
         <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
+          <div class="column has-text-centered">
+            <img src="./static/images/debate.png"
+                 class="image_ICL_samples-image"
+                 alt="Image ICL sample examples."/>
+            <p>An example of the debate annotation framework. Please note that the white rectangle masks serve as censorship, and are not included as inputs. <i>"Affirm."</i> and <i>"Neg."</i> stand for the affirmative and negative debaters, respectively.</p>
           </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
         </div>
       </div>
+
+    <h2 class="title is-4 is-centered">In-context Learning (ICL) Samples</h2>
+    <div class="content is-centered">
+      <p>
+        Here are the in-context learning samples of the image/video annotator and the corresponding expected responses.
+        The white rectangles simply serve as censorship, and are not included as input.
+      </p>
     </div>
-    <!--/ Concurrent Work. -->
+
+    <div class="columns is-centered interpolation-panel">
+      <!-- Image -->
+      <div class="column">
+        <h2 class="title is-5">Image</h2>
+        <div class=" has-text-centered">
+          <img src="./static/images/image_ICL_samples_2.png"
+               class="image_ICL_samples-image"
+               alt="Image ICL sample examples."/>
+        </div>
+      </div>
+      <!--/ Image -->
+
+      <!-- Video. -->
+      <div class="column">
+        <h2 class="title is-5">Video</h2>
+        <div class=" has-text-centered">
+          <img src="./static/images/video_frame_ICL_samples.png"
+               class="video_frame_ICL_samples-image"
+               alt="Video frame ICL sample examples."/>
+        </div>
+      </div>
+      <!--/ Video. -->
+    </div>
+  
+  </div>
 
   </div>
 </section>
 
 
 <section class="section" id="BibTeX">
+  <!-- Acknowledgement. -->
   <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <h2 class="title is-3">&#128170 Acknowledgement</h2>
+
+    <div class="content has-text-justified">
+      <p>
+        This project is built upon the the giant sholder of <a href="https://github.com/microsoft/autogen">Autogen</a>. Great thanks to them!
+      </p>
+    </div>
+  </div>
+  <!--/ Acknowledgement. -->
+
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">&#128080 BibTeX</h2>
+    <pre><code>@inproceedings{yeh2024t2vs,
+  author={Chen Yeh and You-Ming Chang and Wei-Chen Chiu and Ning Yu},
+  booktitle={Advances in Neural Information Processing Systems},
+  title={T2Vs Meet VLMs: A Scalable Multimodal Dataset for Visual Harmfulness Recognition},
+  year={2024}
 }</code></pre>
   </div>
 </section>
