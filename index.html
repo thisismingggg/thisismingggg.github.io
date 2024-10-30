@@ -89,8 +89,12 @@
                 <a href="https://huggingface.co/datasets/denny3388/VHD11K/tree/main"
                     class="external-link button is-normal is-rounded is-dark"
                     target="_blank">
+                  <!-- <span class="icon">
+                      <i class="fa fa-database"></i>
+                  </span> -->
                   <span class="icon">
-                      <i class="far fa-images"></i>
+                    <img class="icon-padding"
+                         src="./static/images/hf-logo-pirate.png">
                   </span>
                   <span>Data (VHD11K)</span>
                   </a>
@@ -107,15 +111,16 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <!-- <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                <a href="https://recorder-v3.slideslive.com/?share=92650&s=ae1ca94b-6fdf-4ea4-811f-384c8ce114c8"
                    class="external-link button is-normal is-rounded is-dark"
-                   target="_blank" > -->
-                <a class="external-link button is-normal is-rounded is-dark"
-                   target="_blank">
+                   target="_blank" >
+                <!-- <a class="external-link button is-normal is-rounded is-dark"
+                   target="_blank"> -->
                   <span class="icon">
-                      <i class="fab fa-youtube"></i>
+                      <i class="fa fa-video"></i>
                   </span>
-                  <span>Video</span>
+                  <span>Video (Please use
+                    Google Chrome)</span>
                 </a>
               </span>
               <!-- Code Link. -->
@@ -169,15 +174,15 @@
     <!--/ Overview. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">&#128249 Video</h2>
         <div class="publication-video">
-          <!-- <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+          <iframe src="https://slideslive.com/js_embed/presentations/38990022"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
 
     <!-- VHD11K. -->
@@ -191,14 +196,14 @@
           <pre><code>dataset_10000_1000
 |--croissant-vhd11k.json            # metadata of VHD11K
 |--harmful_image_10000_ann.json     # annotaion file of harmful images of VHD11K 
-                                      (image name, harmful type, arguments, ...)
+                                  (image name, harmful type, arguments, ...)
 |--harmful_images_10000.zip         # 10000 harmful images of VHD11K
 |--harmful_video_1000_ann.json      # annotaion file of harmful videos of VHD11K
-                                      (video name, harmful type, arguments, ...)
+                                  (video name, harmful type, arguments, ...)
 |--harmful_videos_1000.zip          # 1000 harmful videos of VHD11K
 |--ICL_samples.zip                  # in-context learning samples used in annoators
-    |--ICL_images                   # in-context learning images
-    |--ICL_videos_frames            # frames of each in-context learning video</code></pre>
+|--ICL_images                   # in-context learning images
+|--ICL_videos_frames            # frames of each in-context learning video</code></pre>
         </div>
       </div>
     </div>
@@ -208,11 +213,12 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">&#128202 Evaluation</h2>
-        <div class="columns is-centered">
+        <!-- Evaluation Tables -->
+        <div class="content has-text-justified">
           <div class="column is-four has-text-centered">
             <img src="./static/images/benchmarking.png"
-                     class="interpolation-image"
-                     alt="Pretrained models banchmarking table."/>
+                      class="interpolation-image"
+                  alt="Pretrained models banchmarking table."/>
             <p>Harmfulness detection accuracies of <b><u>pretrained</u></b> baseline methods.</p>
 
             <img src="./static/images/VHD11K_vs_SMID.png"
@@ -222,9 +228,9 @@
             
             <p>Harmfulness detection accuracies of <b><u>prompt-tuned methods on VHD11K and SMID</u></b>.</p>
           </div>
-        </div>
 
-        <div class="content has-text-justified">
+        <!-- Evaluation text -->
+        <div class="column content has-text-justified">
           <p>
             Evaluation and experimental results demonstrate that 
             <ol>
@@ -244,90 +250,92 @@
     </div>
     <!--/ Evaluation. -->
 
-  </div>
-</section>
+    </div>
+    <!-- Evaluation. -->
 
-<section class="section">
-  <div class="container is-max-desktop content">
+    <!-- Example. -->
     <h2 class="title is-3 has-text-centered">&#128588 Examples</h2>
-  
-    <div class="column">
-      <div class="content">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
         <h2 class="title is-4">Annotating Process</h2>
         <div class="content has-text-justified">
           <p>
             When inputting a visual content, the two debaters (i.e. affirmative and negative debaters) engage in a two-round debate on whether the given content is harmful. The "judge" then makes the final decision based on the arguments of both sides. For detailed role definitions for each of the three agents, please refer to the appendix of the paper.
           </p>
+        </div>
 
         <div class="columns is-vcentered interpolation-panel">
           <div class="column has-text-centered">
             <img src="./static/images/debate.png"
-                 class="image_ICL_samples-image"
-                 alt="Image ICL sample examples."/>
+                  class="image_ICL_samples-image"
+                  alt="Image ICL sample examples."/>
             <p>An example of the debate annotation framework. Please note that the white rectangle masks serve as censorship, and are not included as inputs. <i>"Affirm."</i> and <i>"Neg."</i> stand for the affirmative and negative debaters, respectively.</p>
           </div>
         </div>
-      </div>
 
-    <h2 class="title is-4 is-centered">In-context Learning (ICL) Samples</h2>
-    <div class="content is-centered">
-      <p>
-        Here are the in-context learning samples of the image/video annotator and the corresponding expected responses.
-        The white rectangles simply serve as censorship, and are not included as input.
-      </p>
-    </div>
+        <h2 class="title is-4 is-centered">In-context Learning (ICL) Samples</h2>
+        <div class="content is-centered">
+          <p>
+            Here are the in-context learning samples of the image/video annotator and the corresponding expected responses.
+            The white rectangles simply serve as censorship, and are not included as input.
+          </p>
+        </div>
 
-    <div class="columns is-centered interpolation-panel">
-      <!-- Image -->
-      <div class="column">
-        <h2 class="title is-5">Image</h2>
-        <div class=" has-text-centered">
-          <img src="./static/images/image_ICL_samples_2.png"
-               class="image_ICL_samples-image"
-               alt="Image ICL sample examples."/>
+        <div class="columns is-centered interpolation-panel">
+          <!-- Image -->
+          <div class="column">
+            <h2 class="title is-5">Image</h2>
+            <div class=" has-text-centered">
+              <img src="./static/images/image_ICL_samples_2.png"
+                  class="image_ICL_samples-image"
+                  alt="Image ICL sample examples."/>
+            </div>
+          </div>
+          <!--/ Image -->
+
+          <!-- Video. -->
+          <div class="column">
+            <h2 class="title is-5">Video</h2>
+            <div class=" has-text-centered">
+              <img src="./static/images/video_frame_ICL_samples.png"
+                  class="video_frame_ICL_samples-image"
+                  alt="Video frame ICL sample examples."/>
+            </div>
+          </div>
+          <!--/ Video. -->
         </div>
       </div>
-      <!--/ Image -->
-
-      <!-- Video. -->
-      <div class="column">
-        <h2 class="title is-5">Video</h2>
-        <div class=" has-text-centered">
-          <img src="./static/images/video_frame_ICL_samples.png"
-               class="video_frame_ICL_samples-image"
-               alt="Video frame ICL sample examples."/>
-        </div>
-      </div>
-      <!--/ Video. -->
     </div>
-  
-  </div>
-
+    <!-- Example. -->
+      
   </div>
 </section>
 
-
 <section class="section" id="BibTeX">
-  <!-- Acknowledgement. -->
   <div class="container is-max-desktop content">
-    <h2 class="title is-3">&#128170 Acknowledgement</h2>
 
-    <div class="content has-text-justified">
-      <p>
-        This project is built upon the the giant sholder of <a href="https://github.com/microsoft/autogen">Autogen</a>. Great thanks to them!
-      </p>
-    </div>
-  </div>
-  <!--/ Acknowledgement. -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
 
-  <div class="container is-max-desktop content">
-    <h2 class="title is-3">&#128080 BibTeX</h2>
-    <pre><code>@inproceedings{yeh2024t2vs,
+        <!-- Acknowledgement. -->
+        <h2 class="title is-3">&#128170 Acknowledgement</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            This project is built upon the the giant sholder of <a href="https://github.com/microsoft/autogen">Autogen</a>. Great thanks to them!
+          </p>
+        </div>
+        <!--/ Acknowledgement. -->
+
+        <h2 class="title is-3">&#128080 BibTeX</h2>
+        <pre><code>@inproceedings{yeh2024t2vs,
   author={Chen Yeh and You-Ming Chang and Wei-Chen Chiu and Ning Yu},
   booktitle={Advances in Neural Information Processing Systems},
   title={T2Vs Meet VLMs: A Scalable Multimodal Dataset for Visual Harmfulness Recognition},
   year={2024}
 }</code></pre>
+      </div>
+    </div>
   </div>
 </section>
 

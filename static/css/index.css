@@ -2,6 +2,10 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.icon-padding {
+  padding-left: 3px;
+  padding-right: 3px;
+}
 
 .footer .icon-link {
     font-size: 25px;
